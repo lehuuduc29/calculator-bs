@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <div class="input">
+            <input type="number" id="number1"></input>
+            <input type="number" id="number2"></input>
+        </div>
+        <div class="event">
+            <button type="button" onclick="Add()">Addition</button>
+            <button type="button" onclick="Subtr()">Subtraction</button>
+            <button type="button" onclick="Multi()">Multiplication</button>
+            <button type="button" onclick="Divis()">Division</button>
+        </div>
+        <div id="result"></div>
+    </div>
+</body>
+
+<script>
+    let number1 = document.getElementById("number1")
+    let number2 = document.getElementById("number2")
+    let result = 0
+    function Add(){
+        result = parseFloat(number1.value) + parseFloat(number2.value)
+        console.log(number1.value ,  number2.value)
+        document.getElementById("result").innerHTML = result
+    }
+
+    function Subtr(){
+        result = parseFloat(number1.value) - parseFloat(number2.value)
+        console.log(number1.value ,  number2.value)
+        document.getElementById("result").innerHTML = result
+    }
+
+    function Multi(){
+        result = parseFloat(number1.value) * parseFloat(number2.value)
+        console.log(number1.value ,  number2.value)
+        document.getElementById("result").innerHTML = result
+    }
+
+    function Divis(){
+        result = parseFloat(number1.value) / parseFloat(number2.value)
+        console.log(number1.value ,  number2.value)
+        document.getElementById("result").innerHTML = result
+    }
+</script>
+
+</html>

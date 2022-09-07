@@ -1,0 +1,36 @@
+.container{
+    width: 400px;
+    height: 150px;
+    margin:  auto;
+    margin-top: 100px;
+    background-color: rgb(70, 246, 91);
+    border-radius: 20px;
+    /* display: flex; */
+}
+
+.input{
+    width: 90%;
+    margin: auto;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    /* border: 2px solid blue; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.event{
+    width: 90%;
+    margin: auto;
+    /* border: 2px solid red; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#result{
+    width: 20%;
+    margin: auto;
+    /* border: 2px solid red; */
+    padding-top: 30px;
+}
